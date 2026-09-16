@@ -1,0 +1,99 @@
+:root {
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-body-bg: #f4f7f8;
+  --bs-body-color: #20313c;
+}
+
+.container {
+  max-width: 1180px;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  letter-spacing: -0.04em;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #e8edef;
+  border-radius: 14px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-control {
+  min-height: 46px;
+  background-color: #ffffff;
+}
+
+.form-control:focus {
+  border-color: #087f75;
+  box-shadow: 0 0 0 0.2rem rgb(8 127 117 / 12%);
+}
+
+.btn-primary {
+  --bs-btn-bg: #087f75;
+  --bs-btn-border-color: #087f75;
+  --bs-btn-hover-bg: #06665e;
+  --bs-btn-hover-border-color: #06665e;
+  --bs-btn-active-bg: #05564f;
+  --bs-btn-active-border-color: #05564f;
+  --bs-btn-disabled-bg: #087f75;
+  --bs-btn-disabled-border-color: #087f75;
+}
+
+.product-count {
+  padding: 8px 12px;
+  color: #06665e;
+  background-color: #e2f3ef;
+}
+
+.table {
+  min-width: 880px;
+  font-size: 0.9rem;
+}
+
+.table > :not(caption) > * > * {
+  padding: 16px 20px;
+}
+
+.table thead th {
+  color: #596871;
+  background-color: #f7f9fa;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.table tbody td:first-child {
+  min-width: 160px;
+  max-width: 280px;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+
+.table time {
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.table .text-end {
+  font-variant-numeric: tabular-nums;
+}
+
+.table tfoot > tr > * {
+  background-color: #eaf6f2;
+  border-bottom: 0;
+}
+
+.table .editing > td {
+  background-color: #f0faf7;
+}
+
+@media (max-width: 575px) {
+  .card-body.p-4 {
+    padding: 20px !important;
+  }
+}
